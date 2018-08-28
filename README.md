@@ -2,7 +2,7 @@
 
 > This article shows how to use Flask to deploy a pre-trained model as a web api on docker
 
-## requirements
+## Requirements
 
 Please make sure:
 
@@ -11,7 +11,7 @@ Please make sure:
 - you have a model trained(I use ResNet)
 - Azure Data Science Virtual Machine (Optional)
 
-## write flask server code
+## Write flask server code
 
 ```python
 @app.route('/upload', methods=['POST'])
@@ -141,7 +141,7 @@ Please prepare `Dockerfile`,`main.py`,`myresnet.h5` in a separate folder.
 ```bash
  sudo docker build -t 'flask' .
 ```
-This command will download dependence according to dockerfile.
+This command will download dependence according to dockerfile.The requirements are enough in this case. In specific cases, requirements should be different.
 
 ## Run Docker container
 
